@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0);
+  // must use a hook
 
   return (
     <div className='container my-5'>
@@ -12,20 +12,20 @@ function App() {
           <div className='my-5'>
             <h2 className='my-5'>{count}</h2>
             <button 
-            className='btn bt-success mx-3' 
-            onClick={() => setCount(count + 1)}
+              className='btn bt-success mx-3' 
+              onClick={() => null} // add an event function
             >
               Increment
             </button>
             <button className='btn bt-danger mx-3' 
-            onClick={() => setCount(count - 1)} 
-            disabled={count === 0}
+              onClick={() => null} // add an event function
+              disabled={count === 0}
             >
               Decrement
             </button>
             <button className='btn bt-secondary mx-3' 
-            onClick={() => setCount(0)} 
-            disabled={count === 0}
+              onClick={() => null} // add an event function
+              disabled={count === 0}
             >
               Reset
             </button>
