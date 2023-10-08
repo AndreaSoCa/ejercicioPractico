@@ -19,13 +19,11 @@ function App() {
             </button>
             <button className='btn bt-danger mx-3' 
               onClick={() => null} // add an event function
-              disabled={count === 0}
             >
               Decrement
             </button>
             <button className='btn bt-secondary mx-3' 
               onClick={() => null} // add an event function
-              disabled={count === 0}
             >
               Reset
             </button>
